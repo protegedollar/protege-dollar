@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protege Dollar</title>
+</head>
+<body>
+    <h1>Create Account</h1>
+    <form id="createAccountForm">
+        <label for="facial">Facial Data:</label>
+        <input type="file" id="facial" name="facial">
+        <br>
+        <label for="voice">Voice Data:</label>
+        <input type="file" id="voice" name="voice">
+        <br>
+        <label for="dental">Dental Data:</label>
+        <input type="file" id="dental" name="dental">
+        <br>
+        <button type="submit">Create Account</button>
+    </form>
+
+    <h1>Login</h1>
+    <form id="loginForm">
+        <label for="facialLogin">Facial Data:</label>
+        <input type="file" id="facialLogin" name="facialLogin">
+        <br>
+        <label for="voiceLogin">Voice Data:</label>
+        <input type="file" id="voiceLogin" name="voiceLogin">
+        <br>
+        <label for="dentalLogin">Dental Data:</label>
+        <input type="file" id="dentalLogin" name="dentalLogin">
+        <br>
+        <button type="submit">Login</button>
+    </form>
+
+    <script>
+        document.getElementById('createAccountForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Handle account creation
+        });
+
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Handle login
+        });
+    </script>
+</body>
+</html>
